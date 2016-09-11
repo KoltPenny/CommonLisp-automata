@@ -1,3 +1,5 @@
+(defmacro latom (e) `(car (last ,e)))
+
 (defparameter curr-st nil)
 (defparameter strlist nil)
 
