@@ -9,8 +9,8 @@
 
 (defun automata (q str)
   "Checks if a string belongs to an alphabet and if it validates a terminal state"
-  (defparameter curr-st (caar q))
-  (defparameter strlist nil)
+  (setf curr-st (caar q))
+  (setf strlist nil)
   (let ((states nil))
     (setf strlist (map 'list #'(lambda (x) x) str))
     (setf states (mapcar #'(lambda (x) (state-check q x)) strlist))
