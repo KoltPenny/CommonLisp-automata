@@ -1,19 +1,19 @@
 ;;Any string with an odd number of 1's and any number of 0's
-(defparameter Qs1 '((q0 (#\0  q0) (#\1  q1))
-		    (q1 (#\0  q1) (#\1  q0) t)))
+(defparameter Qs1 '((q0 (#\0 q0) (#\1 q1))
+		    (q1 (#\0 q1) (#\1 q0) t)))
 
 ;;Any string with a 101 in between
-(defparameter Qs2 '((q0 (#\0  q0) (#\1  q1))
-		    (q1 (#\0  q2) (#\1  q1))
-		    (q2 (#\0  q0) (#\1  q3))
-		    (q3 (#\0  q3) (#\1  q3) t)))
+(defparameter Qs2 '((q0 (#\0 q0) (#\1 q1))
+		    (q1 (#\0 q2) (#\1 q1))
+		    (q2 (#\0 q0) (#\1 q3))
+		    (q3 (#\0 q3) (#\1 q3) t)))
 
 ;;Any string that has a 1 on the third position from right to left
-(defparameter Qs3 '((q000 (#\0  q000) (#\1  q001))
-		    (q100 (#\0  q000) (#\1  q001) t)
-		    (q010 (#\0  q100) (#\1  q101))
-		    (q001 (#\0  q010) (#\1  q011))
-		    (q110 (#\0  q100) (#\1  q101) t)
-		    (q101 (#\0  q010) (#\1  q011) t)
-		    (q011 (#\0  q110) (#\1  q111))
-		    (q111 (#\0  q110) (#\1  q111) t)))
+(defparameter Qs3 '((q000 (#\0 q000) (#\1 q001))
+		    (q100 (#\0 q000) (#\1 q001) t)
+		    (q010 (#\0 q100) (#\1 q101))
+		    (q001 (#\0 q010) (#\1 q011))
+		    (q110 (#\0 q100) (#\1 q101) t)
+		    (q101 (#\0 q010) (#\1 q011) t)
+		    (q011 (#\0 q110) (#\1 q111))
+		    (q111 (#\0 q110) (#\1 q111) t)))
